@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d78cad75-bccb-48a3-8850-aab44b6a511e}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>
+    </StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="pythonremoved_noise.png" />
+    <Content Include="pythonthres.png" />
+    <Content Include="python\txt.png" />
+    <Content Include="web scrapping\Python Web Scrapping\.spyproject\codestyle.ini" />
+    <Content Include="web scrapping\Python Web Scrapping\.spyproject\encoding.ini" />
+    <Content Include="web scrapping\Python Web Scrapping\.spyproject\vcs.ini" />
+    <Content Include="web scrapping\Python Web Scrapping\.spyproject\workspace.ini" />
+    <Content Include="web scrapping\Python Web Scrapping\contrived.html" />
+    <Content Include="web scrapping\Python Web Scrapping\ret.html" />
+    <Content Include="web scrapping\Python Web Scrapping\shoppe.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="python\screenread.py" />
+    <Compile Include="python\translate.py" />
+    <Compile Include="VS Python\VS Python\ecommerce.py" />
+    <Compile Include="VS Python\VS Python\tokpedscrap.py" />
+    <Compile Include="web scrapping\Python Web Scrapping\ecommerce.py" />
+    <Compile Include="web scrapping\Python Web Scrapping\functionMods.py" />
+    <Compile Include="web scrapping\Python Web Scrapping\main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="python" />
+    <Folder Include="VS Python\" />
+    <Folder Include="VS Python\VS Python" />
+    <Folder Include="web scrapping\" />
+    <Folder Include="web scrapping\Python Web Scrapping" />
+    <Folder Include="web scrapping\Python Web Scrapping\.spyproject" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.6" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
